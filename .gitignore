@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.DS_Store
+dist/
+tools/tests/results/
+
+# Local-only agent configuration and private marker list
+CLAUDE.md
+AGENTS.override.md
+.private-markers

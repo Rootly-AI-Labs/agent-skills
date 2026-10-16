@@ -1,0 +1,102 @@
+{
+  "version": "1.0",
+  "skills": {
+    "alert-triage": [
+      "get_alert",
+      "get_alert_by_short_id",
+      "get_incident",
+      "list_alert_events",
+      "list_alert_groups",
+      "list_alerts",
+      "list_incidents",
+      "list_services"
+    ],
+    "deploy-check": [
+      "get_incident",
+      "get_oncall_handoff_summary",
+      "get_oncall_shift_metrics",
+      "list_incidents",
+      "list_services",
+      "search_incidents"
+    ],
+    "incident-communications": [
+      "get_incident",
+      "list_communications_templates",
+      "list_incident_action_items",
+      "list_status_pages"
+    ],
+    "incident-response": [
+      "check_responder_availability",
+      "find_related_incidents",
+      "get_incident",
+      "get_incident_meeting_transcripts",
+      "get_oncall_handoff_summary",
+      "get_oncall_shift_metrics",
+      "list_incidents",
+      "list_services",
+      "list_teams",
+      "search_incidents",
+      "suggest_solutions"
+    ],
+    "on-call": [
+      "check_responder_availability",
+      "get_current_user",
+      "get_escalation_policy",
+      "get_oncall_handoff_summary",
+      "get_oncall_schedule_summary",
+      "get_oncall_shift_metrics",
+      "get_schedule_shifts",
+      "get_shift_incidents",
+      "list_alert_events",
+      "list_alerts",
+      "list_escalation_policies",
+      "list_incident_action_items",
+      "list_schedules",
+      "list_shifts"
+    ],
+    "retrospective": [
+      "find_related_incidents",
+      "get_incident",
+      "get_incident_meeting_transcripts",
+      "get_incident_retrospective",
+      "list_incident_action_items"
+    ],
+    "service-health": [
+      "get_oncall_handoff_summary",
+      "get_team",
+      "list_incidents",
+      "list_services"
+    ]
+  },
+  "tools": [
+    "check_responder_availability",
+    "find_related_incidents",
+    "get_alert",
+    "get_alert_by_short_id",
+    "get_current_user",
+    "get_escalation_policy",
+    "get_incident",
+    "get_incident_meeting_transcripts",
+    "get_incident_retrospective",
+    "get_oncall_handoff_summary",
+    "get_oncall_schedule_summary",
+    "get_oncall_shift_metrics",
+    "get_schedule_shifts",
+    "get_shift_incidents",
+    "get_team",
+    "list_alert_events",
+    "list_alert_groups",
+    "list_alerts",
+    "list_communications_templates",
+    "list_escalation_policies",
+    "list_incident_action_items",
+    "list_incidents",
+    "list_schedules",
+    "list_services",
+    "list_shifts",
+    "list_status_pages",
+    "list_teams",
+    "search_incidents",
+    "suggest_solutions"
+  ]
+}

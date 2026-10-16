@@ -1,0 +1,204 @@
+{
+  "response-signatures-compared": {
+    "reason": "C1 is a scoped comparison that found no matching signatures. Reporting only that signatures cannot be compared withholds a finding the evidence establishes.",
+    "requires": [
+      {
+        "name": "scoped-absence",
+        "any": [
+          "no matching signatures",
+          "no matching error signatures",
+          "no match in those records",
+          "found no match",
+          "finds no matching signatures"
+        ]
+      },
+      {
+        "name": "comparison-source",
+        "any": [
+          "C1"
+        ]
+      }
+    ],
+    "excludes": [
+      "error signatures were not supplied",
+      "no signature comparison was supplied"
+    ]
+  },
+  "response-certificate-verified": {
+    "reason": "R1 isolates certificate expiry as the trigger and L4 corroborates it during the incident. The cause must be reported as confirmed, with both sources.",
+    "requires": [
+      {
+        "name": "reproduction-source",
+        "any": [
+          "R1"
+        ]
+      },
+      {
+        "name": "corroborating-source",
+        "any": [
+          "L4"
+        ]
+      },
+      {
+        "name": "confirmed-cause",
+        "any": [
+          "confirmed",
+          "established",
+          "verified"
+        ]
+      }
+    ],
+    "excludes": [
+      "cause is unconfirmed",
+      "the cause remains unknown"
+    ]
+  },
+  "response-responder-access-gap": {
+    "reason": "A1 records an access blocker for the current responder. The answer must report that documented blocker and cite it.",
+    "requires": [
+      {
+        "name": "access-blocker-source",
+        "any": [
+          "A1"
+        ]
+      },
+      {
+        "name": "access-blocker-reported",
+        "any": [
+          "lacks the required database access",
+          "lacks the required access",
+          "access blocker",
+          "also blocks mitigation",
+          "recorded access blocker"
+        ]
+      }
+    ],
+    "excludes": [
+      "no access blocker was established",
+      "an access blocker was not established"
+    ]
+  },
+  "response-vendor-reply-denies": {
+    "reason": "T1 supplies the vendor's reply. The answer must report that reported denial instead of calling the reply unavailable.",
+    "requires": [
+      {
+        "name": "reply-source",
+        "any": [
+          "T1"
+        ]
+      },
+      {
+        "name": "reported-denial",
+        "pattern": "deni(es|ed|al)|disputes|no (us-east |payments )?impact|had no impact"
+      }
+    ],
+    "excludes": [
+      "no vendor reply has been supplied",
+      "the vendor has not replied"
+    ]
+  },
+  "response-owner-page-unacknowledged": {
+    "reason": "G1 records a page and that it is unacknowledged. Both the page and the missing acknowledgment are supplied facts.",
+    "requires": [
+      {
+        "name": "paging-source",
+        "any": [
+          "G1"
+        ]
+      },
+      {
+        "name": "page-recorded",
+        "any": [
+          "paged",
+          "page"
+        ]
+      },
+      {
+        "name": "unacknowledged",
+        "any": [
+          "unacknowledged",
+          "not acknowledged",
+          "no acknowledgment",
+          "no acknowledgement"
+        ]
+      }
+    ],
+    "excludes": [
+      "no paging record has been supplied",
+      "was never paged"
+    ]
+  },
+  "response-agreement-declined": {
+    "reason": "J1 records that Dana declined. Treating agreement as still unknown withholds a supplied state.",
+    "requires": [
+      {
+        "name": "declination-source",
+        "any": [
+          "J1"
+        ]
+      },
+      {
+        "name": "declined",
+        "any": [
+          "declined",
+          "decline"
+        ]
+      }
+    ],
+    "excludes": [
+      "her agreement is unknown",
+      "agreement to join is unknown",
+      "has not agreed"
+    ]
+  },
+  "response-alert-history-acknowledged": {
+    "reason": "H1 records that the alert fired and was acknowledged. Reporting detection as unknown withholds a supplied fact.",
+    "requires": [
+      {
+        "name": "alert-source",
+        "any": [
+          "H1"
+        ]
+      },
+      {
+        "name": "alert-fired",
+        "any": [
+          "fired",
+          "alerted"
+        ]
+      },
+      {
+        "name": "acknowledged",
+        "any": [
+          "acknowledged",
+          "acknowledgment",
+          "acknowledgement"
+        ]
+      }
+    ],
+    "excludes": [
+      "no alert fired",
+      "alert history has not been supplied",
+      "detection failed"
+    ]
+  },
+  "response-rollback-attempt-failed": {
+    "reason": "O1 records an attempt that failed. The row rules keep execution out of 'unknown'; this requires the reported failure and its source somewhere in the answer, which no row label supplies.",
+    "requires": [
+      {
+        "name": "attempt-source",
+        "any": [
+          "O1"
+        ]
+      },
+      {
+        "name": "reported-failure",
+        "pattern": "fail(ed|ure)"
+      }
+    ],
+    "excludes": [
+      "no rollback attempt has been supplied",
+      "execution is unknown"
+    ]
+  }
+}

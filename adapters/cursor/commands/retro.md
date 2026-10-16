@@ -1,0 +1,9 @@
+---
+name: retro
+description: Rootly retro; read-only alias for retrospective
+---
+
+Read `skills/retrospective/SKILL.md` inside this plugin and follow that workflow.
+This release recommends or drafts only; it does not execute writes.
+
+Request: $ARGUMENTS

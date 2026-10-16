@@ -1,0 +1,9 @@
+---
+name: trend
+description: Rootly trend; read-only alias for service-health
+---
+
+Read `skills/service-health/SKILL.md` inside this plugin and follow that workflow.
+This release recommends or drafts only; it does not execute writes.
+
+Request: $ARGUMENTS

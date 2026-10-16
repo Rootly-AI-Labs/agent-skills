@@ -1,0 +1,21 @@
+{
+  "name": "rootly",
+  "version": "1.0",
+  "description": "Read-only incident response, alert triage, deploy checks, service health, on-call, communications, and retrospectives.",
+  "author": {
+    "name": "Rootly"
+  },
+  "homepage": "https://github.com/Rootly-AI-Labs/agent-skills",
+  "repository": "https://github.com/Rootly-AI-Labs/agent-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "rootly",
+    "incident-response",
+    "on-call",
+    "read-only"
+  ],
+  "logo": "assets/logo.svg",
+  "skills": "./skills/",
+  "commands": "./adapters/cursor/commands/",
+  "mcpServers": "./mcp.json"
+}

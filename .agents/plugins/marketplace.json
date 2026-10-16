@@ -1,0 +1,20 @@
+{
+  "name": "rootly-agent-skills",
+  "interface": {
+    "displayName": "Rootly Agent Skills"
+  },
+  "plugins": [
+    {
+      "name": "rootly",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

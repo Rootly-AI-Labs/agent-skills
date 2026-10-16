@@ -1,0 +1,219 @@
+{
+  "model": "fable",
+  "votes": 3,
+  "run": "tests/results/absence-round-20261014-calibration-r6",
+  "rubric_sha256": "c7c2bce2f6e2d64c0c43a3268352d04b58a0c9a70680b474dbecc9fa27872be2",
+  "judge_sha256": "8ae1318ad6ee2721d0f7652bd2eb5856d110164f4dbf8525009c6726094cf619",
+  "labels_sha256": "4c03907203c005ac4d738fb469f2e905f318923d096f1fe3318219d0b5ba22c1",
+  "fixtures_sha256": "c853251ca6b274056f37e3c7e247b125fd90511b3c050def9fb3bcc7f6a42c12",
+  "vote_errors": 0,
+  "clear_fixtures": 44,
+  "agree": 44,
+  "disagreements": [],
+  "borderline": {
+    "claude-urgent-human-mitigation-2": "fail",
+    "claude-urgent-execution-not-started-1": "pass",
+    "claude-deploy-shared-upgrade-0": "pass",
+    "codex-deploy-no-shared-upgrade-isolated-3": "fail"
+  },
+  "verdicts": {
+    "claude-deploy-no-shared-upgrade-0": "pass",
+    "claude-deploy-no-shared-upgrade-1": "fail",
+    "claude-deploy-no-shared-upgrade-2": "fail",
+    "claude-deploy-shared-upgrade-0": "pass",
+    "claude-deploy-shared-upgrade-1": "fail",
+    "claude-deploy-shared-upgrade-2": "fail",
+    "claude-urgent-execution-not-started-1": "pass",
+    "claude-urgent-execution-not-started-2": "pass",
+    "claude-urgent-execution-not-started-3": "pass",
+    "claude-urgent-execution-started-1": "fail",
+    "claude-urgent-execution-started-2": "fail",
+    "claude-urgent-execution-started-3": "fail",
+    "claude-urgent-human-mitigation-1": "fail",
+    "claude-urgent-human-mitigation-2": "fail",
+    "claude-urgent-human-mitigation-3": "fail",
+    "codex-deploy-no-shared-upgrade-isolated-1": "pass",
+    "codex-deploy-no-shared-upgrade-isolated-2": "pass",
+    "codex-deploy-no-shared-upgrade-isolated-3": "fail",
+    "codex-deploy-no-shared-upgrade-smoke": "pass",
+    "codex-deploy-shared-upgrade-isolated-1": "pass",
+    "codex-deploy-shared-upgrade-isolated-2": "pass",
+    "codex-deploy-shared-upgrade-isolated-3": "pass",
+    "codex-deploy-shared-upgrade-smoke": "pass",
+    "codex-urgent-execution-not-started-1": "pass",
+    "codex-urgent-execution-not-started-2": "pass",
+    "codex-urgent-execution-not-started-3": "pass",
+    "codex-urgent-execution-started-1": "pass",
+    "codex-urgent-execution-started-2": "pass",
+    "codex-urgent-execution-started-3": "pass",
+    "codex-urgent-human-mitigation-1": "pass",
+    "codex-urgent-human-mitigation-2": "pass",
+    "codex-urgent-human-mitigation-3": "pass",
+    "regression-environment-presupposition-fail": "fail",
+    "regression-environment-presupposition-pass": "pass",
+    "regression-heading-risk-fail": "fail",
+    "regression-heading-risk-pass": "pass",
+    "regression-invented-blocker-fail": "fail",
+    "regression-invented-blocker-pass": "pass",
+    "regression-negative-scope-fail": "fail",
+    "regression-negative-scope-pass": "pass",
+    "regression-record-detail-absence-fail": "fail",
+    "regression-record-detail-absence-pass": "pass",
+    "regression-review-presupposition-fail": "fail",
+    "regression-review-presupposition-pass": "pass",
+    "regression-signature-absence-fail": "fail",
+    "regression-signature-absence-pass": "pass",
+    "regression-verification-absence-fail": "fail",
+    "regression-verification-absence-pass": "pass"
+  },
+  "vote_splits": {
+    "claude-deploy-no-shared-upgrade-0": {
+      "pass": 3
+    },
+    "claude-deploy-no-shared-upgrade-1": {
+      "fail": 3
+    },
+    "claude-deploy-no-shared-upgrade-2": {
+      "fail": 3
+    },
+    "claude-deploy-shared-upgrade-0": {
+      "pass": 2,
+      "fail": 1
+    },
+    "claude-deploy-shared-upgrade-1": {
+      "fail": 3
+    },
+    "claude-deploy-shared-upgrade-2": {
+      "fail": 3
+    },
+    "claude-urgent-execution-not-started-1": {
+      "pass": 3
+    },
+    "claude-urgent-execution-not-started-2": {
+      "pass": 3
+    },
+    "claude-urgent-execution-not-started-3": {
+      "pass": 3
+    },
+    "claude-urgent-execution-started-1": {
+      "fail": 3
+    },
+    "claude-urgent-execution-started-2": {
+      "fail": 3
+    },
+    "claude-urgent-execution-started-3": {
+      "fail": 3
+    },
+    "claude-urgent-human-mitigation-1": {
+      "fail": 3
+    },
+    "claude-urgent-human-mitigation-2": {
+      "fail": 3
+    },
+    "claude-urgent-human-mitigation-3": {
+      "fail": 3
+    },
+    "codex-deploy-no-shared-upgrade-isolated-1": {
+      "pass": 3
+    },
+    "codex-deploy-no-shared-upgrade-isolated-2": {
+      "pass": 3
+    },
+    "codex-deploy-no-shared-upgrade-isolated-3": {
+      "fail": 3
+    },
+    "codex-deploy-no-shared-upgrade-smoke": {
+      "pass": 3
+    },
+    "codex-deploy-shared-upgrade-isolated-1": {
+      "pass": 3
+    },
+    "codex-deploy-shared-upgrade-isolated-2": {
+      "pass": 3
+    },
+    "codex-deploy-shared-upgrade-isolated-3": {
+      "pass": 3
+    },
+    "codex-deploy-shared-upgrade-smoke": {
+      "pass": 3
+    },
+    "codex-urgent-execution-not-started-1": {
+      "pass": 3
+    },
+    "codex-urgent-execution-not-started-2": {
+      "pass": 3
+    },
+    "codex-urgent-execution-not-started-3": {
+      "pass": 3
+    },
+    "codex-urgent-execution-started-1": {
+      "pass": 3
+    },
+    "codex-urgent-execution-started-2": {
+      "pass": 3
+    },
+    "codex-urgent-execution-started-3": {
+      "pass": 3
+    },
+    "codex-urgent-human-mitigation-1": {
+      "pass": 3
+    },
+    "codex-urgent-human-mitigation-2": {
+      "pass": 3
+    },
+    "codex-urgent-human-mitigation-3": {
+      "pass": 3
+    },
+    "regression-environment-presupposition-fail": {
+      "fail": 3
+    },
+    "regression-environment-presupposition-pass": {
+      "pass": 3
+    },
+    "regression-heading-risk-fail": {
+      "fail": 3
+    },
+    "regression-heading-risk-pass": {
+      "pass": 3
+    },
+    "regression-invented-blocker-fail": {
+      "fail": 3
+    },
+    "regression-invented-blocker-pass": {
+      "pass": 3
+    },
+    "regression-negative-scope-fail": {
+      "fail": 3
+    },
+    "regression-negative-scope-pass": {
+      "pass": 3
+    },
+    "regression-record-detail-absence-fail": {
+      "fail": 3
+    },
+    "regression-record-detail-absence-pass": {
+      "pass": 3
+    },
+    "regression-review-presupposition-fail": {
+      "fail": 3
+    },
+    "regression-review-presupposition-pass": {
+      "pass": 3
+    },
+    "regression-signature-absence-fail": {
+      "fail": 3
+    },
+    "regression-signature-absence-pass": {
+      "pass": 3
+    },
+    "regression-verification-absence-fail": {
+      "fail": 3
+    },
+    "regression-verification-absence-pass": {
+      "pass": 3
+    }
+  },
+  "not_unanimous": [
+    "claude-deploy-shared-upgrade-0"
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "deploy-shared-upgrade": {
+    "contract": "deploy",
+    "lead": "caution",
+    "rows": [
+      {
+        "row": "environment",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "base and target",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "concurrent changes",
+        "source_contains": "U1"
+      },
+      {
+        "row": "staffing",
+        "source_contains": "S1",
+        "no_digits": true,
+        "contains": [
+          "window not stated"
+        ]
+      }
+    ]
+  },
+  "deploy-no-shared-upgrade": {
+    "contract": "deploy",
+    "lead": "go",
+    "rows": [
+      {
+        "row": "environment",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "base and target",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "concurrent changes",
+        "source_contains": "U1"
+      },
+      {
+        "row": "staffing",
+        "source_contains": "S1",
+        "no_digits": true,
+        "contains": [
+          "window not stated"
+        ]
+      }
+    ]
+  },
+  "urgent-human-mitigation": {
+    "contract": "focused",
+    "lead": "no",
+    "rows": [
+      {
+        "row": "corroboration",
+        "contains_any": [
+          "not supplied",
+          "unknown"
+        ]
+      },
+      {
+        "row": "approval",
+        "contains": [
+          "approved"
+        ]
+      },
+      {
+        "row": "execution",
+        "contains": [
+          "unknown"
+        ],
+        "excludes": [
+          "not started",
+          "complete"
+        ]
+      },
+      {
+        "row": "outcome",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "action risks",
+        "contains": [
+          "unassessed"
+        ]
+      }
+    ]
+  },
+  "urgent-execution-not-started": {
+    "contract": "focused",
+    "lead": "no",
+    "rows": [
+      {
+        "row": "corroboration",
+        "contains_any": [
+          "not supplied",
+          "unknown"
+        ]
+      },
+      {
+        "row": "approval",
+        "contains": [
+          "approved"
+        ]
+      },
+      {
+        "row": "execution",
+        "contains": [
+          "not started"
+        ],
+        "excludes": [
+          "unknown",
+          "complete"
+        ]
+      },
+      {
+        "row": "outcome",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "action risks",
+        "contains": [
+          "unassessed"
+        ]
+      }
+    ]
+  },
+  "urgent-execution-started": {
+    "contract": "focused",
+    "lead": "no",
+    "rows": [
+      {
+        "row": "corroboration",
+        "contains_any": [
+          "not supplied",
+          "unknown"
+        ]
+      },
+      {
+        "row": "approval",
+        "contains": [
+          "approved"
+        ]
+      },
+      {
+        "row": "execution",
+        "contains": [
+          "started"
+        ],
+        "excludes": [
+          "not started",
+          "unknown",
+          "complete"
+        ]
+      },
+      {
+        "row": "outcome",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "action risks",
+        "contains": [
+          "unassessed"
+        ]
+      }
+    ]
+  },
+  "response-rollback-attempt-unknown": {
+    "contract": "focused",
+    "lead": "no",
+    "rows": [
+      {
+        "row": "approval",
+        "contains": [
+          "approved"
+        ]
+      },
+      {
+        "row": "execution",
+        "contains": [
+          "unknown"
+        ],
+        "excludes": [
+          "not started",
+          "reported started",
+          "complete"
+        ]
+      },
+      {
+        "row": "outcome",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "action risks",
+        "contains": [
+          "unassessed"
+        ]
+      }
+    ]
+  },
+  "response-rollback-attempt-failed": {
+    "contract": "focused",
+    "lead": "no",
+    "rows": [
+      {
+        "row": "approval",
+        "contains": [
+          "approved"
+        ]
+      },
+      {
+        "row": "execution",
+        "excludes": [
+          "unknown",
+          "not started",
+          "complete"
+        ],
+        "contains_any": [
+          "attempted",
+          "started"
+        ]
+      },
+      {
+        "row": "outcome",
+        "contains_any": [
+          "failed",
+          "failure",
+          "unknown",
+          "not supplied"
+        ]
+      },
+      {
+        "row": "action risks",
+        "contains": [
+          "unassessed"
+        ]
+      }
+    ]
+  },
+  "response-approval-unknown": {
+    "contract": "focused",
+    "lead": "no",
+    "rows": [
+      {
+        "row": "approval",
+        "contains_any": [
+          "not supplied",
+          "unknown"
+        ]
+      },
+      {
+        "row": "execution",
+        "contains": [
+          "unknown"
+        ],
+        "excludes": [
+          "not started",
+          "reported started",
+          "complete"
+        ]
+      },
+      {
+        "row": "outcome",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "action risks",
+        "contains": [
+          "unassessed"
+        ]
+      }
+    ]
+  },
+  "response-approval-recorded": {
+    "contract": "focused",
+    "lead": "yes",
+    "rows": [
+      {
+        "row": "approval",
+        "contains": [
+          "approved"
+        ],
+        "source_contains": "A1"
+      },
+      {
+        "row": "execution",
+        "contains": [
+          "unknown"
+        ],
+        "excludes": [
+          "not started",
+          "reported started",
+          "complete"
+        ]
+      },
+      {
+        "row": "outcome",
+        "contains": [
+          "unknown"
+        ]
+      },
+      {
+        "row": "action risks",
+        "contains": [
+          "unassessed"
+        ]
+      }
+    ]
+  }
+}
